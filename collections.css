@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    background: #1d2026;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+.error-msg{
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+    width: 100%;
+}
+nav .menu-img{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s;
+}
+.contact{
+    padding: 0.9rem;
+    background-color: #00986F;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s;
+    margin: 0;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+}
+.contact.active,.contact:hover{
+    color: #fff;
+    box-shadow: 0 2px 1px 0 rgba(255,255,255,0.2);
+}
+a.active,a:hover{
+    color: aqua;
+}
+.collections{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+    
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2);
+    transition: 0.3s;
+    margin: auto;
+    color: #1d2026;
+    border-radius: 5px;
+    width: 200px;
+    height: 380px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.image{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+  /* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+    height: 100px;
+    background-color: lightslategray;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+}
+.card img {
+    border-radius: 5px;
+}
+footer{
+    background-color: black;
+    padding: 1.2em;
+}
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+footer ul li:hover{
+    text-decoration: underline;
+}
+footer ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media(max-width:900px){
+    nav,.collections,footer{
+        display: none;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error-msg{
+        text-align: center;
+        display: unset;
+    }
+}
