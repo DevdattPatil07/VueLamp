@@ -69,12 +69,42 @@ a.active,a:hover{
     flex-wrap: wrap;
     line-height: 1.5;
     margin-top: 100px;
+    color: #9A9A9A;
+}
+.contact-info h1{
+    color: #fff;
 }
 .contact-info a{
     text-decoration: none;
-    color: #fff;
+    color:#9A9A9A;
 }
 .icons{
     display: flex;
     justify-content: space-around;
+}
+.icons .fa-facebook-f{
+    color: blue;
+}
+.icons .fa-twitter{
+    color: skyblue;
+}
+.icons .fa-instagram{
+    color: red;
+}
+.icons .fa-envelope{
+    color: orange;
+}
+@media(max-width:900px){
+    nav,.contact-info{
+        display: none;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .error-msg{
+        text-align: center;
+        display: unset;
+    }
 }
