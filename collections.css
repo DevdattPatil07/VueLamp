@@ -111,15 +111,12 @@ a.active,a:hover{
 .card img {
     border-radius: 5px;
 }
-footer{
-    background-color: black;
-    padding: 1.2em;
-}
 footer ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    padding: 3rem;
 }
 footer ul li:hover{
     text-decoration: underline;
